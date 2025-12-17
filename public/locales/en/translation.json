@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "categories": "Categories",
+    "download": "Download",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Real Estate in Upper Egypt <br /> <span class='text-primary'>Reimagined.</span>",
+    "subtitle": "Oryx is the first specialized platform for property listings in Upper Egypt and the Red Sea. Buy, sell, and rent with confidence.",
+    "download_btn": "Download App",
+    "contact_btn": "Contact Us"
+  },
+  "about": {
+    "title": "Why Oryx?",
+    "heading": "Organizing the Real Estate Market in Upper Egypt",
+    "desc1": "Oryx is a specialized PropTech platform for property listings and project promotions across Upper Egypt and the Red Sea. Built for the region’s unique market, Oryx empowers developers, brokers, and individual sellers to showcase residential, commercial, and land properties with ease.",
+    "desc2": "Focused on transparency, simplicity, and local relevance, Oryx helps users list, promote, and discover properties efficiently."
+  },
+  "features": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive real estate solutions for everyone.",
+    "items": {
+      "listings": { "title": "Property Listings", "desc": "Browse thousands of verified properties across Upper Egypt." },
+      "marketing": { "title": "Digital Marketing", "desc": "Advanced promotion for your projects to reach the right audience." },
+      "consultancy": { "title": "Consultancy", "desc": "Expert advice to help you make the best investment decisions." }
+    }
+  },
+  "categories": {
+    "title": "Property Categories",
+    "subtitle": "Explore our wide range of property types.",
+    "items": {
+      "Land": "Land",
+      "Administrative": "Administrative",
+      "Tower": "Tower",
+      "Student Housing": "Student Housing",
+      "Apartment": "Apartment",
+      "Building": "Building",
+      "Villa": "Villa",
+      "Shop": "Shop"
+    },
+    "desc": {
+      "Land": "Residential and agricultural lands.",
+      "Administrative": "Offices and business hubs.",
+      "Tower": "High-rise living with views.",
+      "Student Housing": "Affordable stays for students.",
+      "Apartment": "Modern apartments for families.",
+      "Building": "Full residential buildings.",
+      "Villa": "Luxury villas with gardens.",
+      "Shop": "Retail spaces for your business."
+    }
+  },
+  "cities": {
+    "title": "Covered Cities",
+    "subtitle": "Find properties in the most prime locations across Upper Egypt."
+  },
+  "download": {
+    "title": "Download Oryx App Now!",
+    "subtitle": "Get the best real estate experience in Upper Egypt right on your phone. Browse listings, contact sellers, and find your dream property.",
+    "scan": "Scan to Download"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help you",
+    "call": "Call Us",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "whatsapp_desc": "Chat with us directly",
+    "whatsapp_btn": "Open WhatsApp",
+    "email": "Email Us"
+  },
+  "footer": {
+    "rights": "© 2025 Oryx App. All rights reserved.",
+    "company": "Company",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "careers": "Careers",
+    "support": "Support",
+    "help": "Help Center",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "faqs": "FAQs",
+    "newsletter": "Newsletter",
+    "subscribe_desc": "Subscribe to get the latest property news.",
+    "email_placeholder": "Enter your email",
+    "subscribe_btn": "Subscribe",
+    "whatsapp_chat": "Chat on WhatsApp",
+    "privacy_short": "Privacy",
+    "terms_short": "Terms",
+    "sitemap": "Sitemap"
+  },
+  "apk": {
+    "title": "Experience Oryx on the Big Screen",
+    "subtitle": "Download the official APK for your Android TV or Smart Screen. View properties in stunning detail with your family.",
+    "btn_download": "Download APK",
+    "btn_direct": "Direct Download",
+    "compatible": "Compatible with Android TV",
+    "version": "Version 1.0.2",
+    "updated": "Updated: Nov 2025"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Oryx.",
+    "q1": "How do I list my property?",
+    "a1": "You can easily list your property by downloading the Oryx app, creating an account, and clicking on the 'Add Property' button. Follow the simple steps to upload photos and details.",
+    "q2": "Is Oryx free to use?",
+    "a2": "Yes, browsing properties on Oryx is completely free. We also offer free listing options for individual sellers.",
+    "q3": "Which cities do you cover?",
+    "a3": "We currently cover all major cities in Upper Egypt including Qena, Luxor, Aswan, Sohag, and Assiut, with plans to expand further.",
+    "view_all": "View All FAQs"
+  }
+}

@@ -1,0 +1,219 @@
+:root {
+  --oryx-primary: #F10102;
+  --oryx-dark: #0F172A;
+  --oryx-light: #F8FAFC;
+  --oryx-gray: #64748B;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-premium: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
+  color: var(--oryx-dark);
+  background-color: var(--oryx-light);
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Glassmorphism */
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-lg);
+  border-radius: 24px;
+}
+
+/* Navbar */
+.navbar-brand .brand-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--oryx-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-10deg);
+}
+
+.navbar-brand .brand-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--oryx-dark);
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--oryx-gray) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--oryx-primary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--oryx-primary);
+  border-color: var(--oryx-primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d00000;
+  border-color: #d00000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(241, 1, 2, 0.5);
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.bento-item {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.bento-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-premium);
+  border-color: rgba(241, 1, 2, 0.1);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* RTL Marquee */
+[dir="rtl"] .marquee-content {
+  animation: marquee-rtl 20s linear infinite;
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+/* RTL Support */
+[dir="rtl"] .ms-auto { margin-right: auto !important; margin-left: 0 !important; }
+[dir="rtl"] .me-auto { margin-left: auto !important; margin-right: 0 !important; }
+[dir="rtl"] .text-end { text-align: left !important; }
+[dir="rtl"] .text-start { text-align: right !important; }
+
+/* Image Cards */
+.category-card:hover .category-overlay {
+  opacity: 1 !important;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+  border-color: var(--oryx-primary) !important;
+}
+
+/* Navbar Scrolled */
+.navbar.glass-effect {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.bg-dark-transparent {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+/* Global Rounded Images */
+img {
+  border-radius: 1rem; /* rounded-4 equivalent */
+}
+.rounded-circle img {
+  border-radius: 50%;
+}
+
+/* FAQ Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(241, 1, 2, 0.05);
+  color: var(--oryx-primary);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(241, 1, 2, 0.1);
+}
+.accordion-item {
+  border: 1px solid rgba(0,0,0,0.05);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--oryx-primary);
+  border-radius: 5px;
+}
